@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="fullscreen">
+
+        <div class="wrap">
+
+            <!-- 헤더 -->
+            <header></header>
+
+            <!-- 섹션 원-->
+            <div class="one">
+                <div class="main_slide">
+                    <img src="img/cocomain.jpg" alt="">
+                </div>
+
+                
+            </div>
+
+            
+
+            <!-- 섹션 투 -->
+            <div class="textbox">
+                <div class="text">
+                <h1 class="text_obj">México</h1>
+                <h1 class="text_obj">Guanajuato</h1>
+                <h3 class="text_obj">픽사 애니메이션 코코의 배경 모티브가 된 <br> 멕시코의 과나후아토.</h3>
+            </div>
+                <div class="mask_img">
+                    <img src="" alt="">
+                </div>
+                <!-- 작은 슬라이드 -->
+                <div id="slidewrap">
+                    <ul class="slide">
+                        <li><img src="img/5.jpg" alt=""></li>
+                        <li><img src="img/cocosub1.jpg" alt=""></li>
+                        <li><img src="img/cocosub6.jpg" alt=""></li>
+                        <li><img src="img/cocococo.jpg" alt=""></li>
+
+                    </ul>
+
+
+
+                </div>
+                <div class="slidebtton_l">
+                    <span class="prev">&larr;</span>
+                </div>
+                
+                <div class="slidebtton_r">
+                    <span class="next">&rarr;</span>
+                </div>
+
+                <div class="modal">
+                    <div class="modalBox"></div>
+                </div>
+                
+            </div>
+
+
+
+        </div>
+    </div>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script>
+        //slide//
+
+        $('.prev').click(function () {
+            $('.slide li:last').prependTo('.slide');
+            $('.slide').css('margin-left', '-20%');
+            $('.slide').stop().animate({ marginLeft: 0 }, 800);
+        });
+
+        $('.next').click(function () {
+            $('.slide').stop().animate({ marginLeft: '-20%' }, 800, function () {
+                $('.slide li:first').appendTo('.slide');
+                $('.slide').css({ marginLeft: 0 });
+            });
+        });
+
+        // $(function(){
+        //    $(".textbox h1").mouseover(function(){
+        //     $(".main_slide img").css({"opacity":"0.8", "transition":"all 1.5s"});
+        //    });
+        // });
+        
+
+        // $(function(){
+        //     $(".textbox h1").mouseleave(function(){
+        //         $(".main_slide img").css("opacity", "0.3");
+        //     });
+        // });
+        
+        //slide li modal//
+        $(function(){
+            $(".slide li img").click(function(){
+                let img = new Image();
+                img.src = $(this).attr("src")
+                $('.modalBox').html(img);
+                $(".modal").show();
+            });
+
+            $(".modal").click(function(e){
+                $(".modal").toggle();
+            });
+        });
+
+        $(function(){
+            $(".slide li img").click(function(){
+                 $(".main_slide img").css("opacity", "0.3");
+            });
+
+            $(".modal").click(function(){
+                $(".main_slide img").css("opacity", "0.8");
+            })
+        });
+        
+    </script>
+
+</body>
+
+</html>
