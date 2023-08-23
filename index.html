@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="img/lantern.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="common/common.css">
+
+
 </head>
 
 
@@ -21,10 +25,19 @@
             <!-- 헤더 -->
             <aside>
                 <a href="#"><img src="img/logo_white.png" alt="logo"></a>
-                <a href="#"><h1>CHARACTER</h1><p>Story Of Character</p></a>
-                <a href="#"><h1>ANIMATION</h1><p>Behind Story <br> Of The Movie</p></a>
-                <a href="#"><h1>TRAVEL</h1><p>Place Of The Movie</p></a>
-           </aside>
+                <a href="#">
+                    <h1>CHARACTER</h1>
+                    <p>Story Of Character</p>
+                </a>
+                <a href="#">
+                    <h1>ANIMATION</h1>
+                    <p>Behind Story <br> Of The Movie</p>
+                </a>
+                <a href="#">
+                    <h1>TRAVEL</h1>
+                    <p>Place Of The Movie</p>
+                </a>
+            </aside>
 
             <!-- 섹션 원-->
             <div class="one">
@@ -32,18 +45,26 @@
                     <img src="img/cocomain.jpg" alt="">
                 </div>
 
+
+            </div>
+
+            <button type="button">패키지 예약</button>
+            <div class="popup">
                 
             </div>
 
-            
-
             <!-- 섹션 투 -->
             <div class="textbox">
+
+               
+               
                 <div class="text">
-                <h1 class="text_obj">México</h1>
-                <h1 class="text_obj">Guanajuato</h1>
-                <h3 class="text_obj">픽사 애니메이션 코코의 배경 모티브가 된 <br> 멕시코의 과나후아토.</h3>
-            </div>
+                    
+                    <h1 class="text_obj">México</h1>
+                    <h1 class="text_obj">Guanajuato</h1>
+                    <h3 class="text_obj">픽사 애니메이션 코코의 배경 모티브가 된 <br> 멕시코의 과나후아토.</h3>
+                </div>
+                
                 <div class="mask_img">
                     <img src="" alt="">
                 </div>
@@ -54,7 +75,7 @@
                         <li><img src="img/cocosub1.jpg" alt=""></li>
                         <li><img src="img/cocosub6.jpg" alt=""></li>
                         <li><img src="img/cocococo.jpg" alt=""></li>
-
+                        
                     </ul>
 
 
@@ -63,24 +84,34 @@
                 <div class="slidebtton_l">
                     <span class="prev">&larr;</span>
                 </div>
-                
+
                 <div class="slidebtton_r">
                     <span class="next">&rarr;</span>
                 </div>
 
                 <div class="modal">
+
+
+
                     <div class="modalBox">
-                        <h2 class="modaltext"></h>
+
+                        
+
                     </div>
+
+                  
+
                 </div>
-                
             </div>
 
-
-
         </div>
+
+
+
+    </div>
     </div>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    
     <script>
         //slide//
 
@@ -102,40 +133,39 @@
         //     $(".main_slide img").css({"opacity":"0.8", "transition":"all 1.5s"});
         //    });
         // });
-        
+
 
         // $(function(){
         //     $(".textbox h1").mouseleave(function(){
         //         $(".main_slide img").css("opacity", "0.3");
         //     });
         // });
-        
+
         //slide li modal//
-        $(function(){
-            $(".slide li img").click(function(){
+        $(function () {
+            $(".slide li img").click(function () {
                 let img = new Image();
                 img.src = $(this).attr("src")
                 $('.modalBox').html(img);
                 $(".modal").show();
             });
 
-            $(".modal").click(function(e){
+            $(".modal").click(function (e) {
                 $(".modal").toggle();
             });
         });
 
-        $(function(){
-            $(".slide li img").click(function(){
-                 $(".main_slide img").css("opacity", "0.3");
+        $(function () {
+            $(".slide li img").click(function () {
+                $(".main_slide img").css("opacity", "0.3");
             });
 
-            $(".modal").click(function(){
+            $(".modal").click(function () {
                 $(".main_slide img").css("opacity", "0.8");
             })
         });
 
-        
-        
+
     </script>
 
 </body>

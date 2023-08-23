@@ -35,23 +35,6 @@
 	position: absolute;
 }
 
-aside{width: 90px; height: 100%; transition: 1.5s ease-in-out;
-    position: fixed; z-index: 10; background: rgba(252, 251, 251, 0.1);
-    border-right: 1px dashed rgba(252, 250, 250, 0.3); text-align: center; 
-}
-aside:hover{width: 200px; background: rgba(252, 251, 251, 0.3);}
-aside a:not(:first-of-type){width: 100%; display: inline-block; margin-bottom: 50px;}
-aside a:first-of-type{display: flex; justify-content: center; margin-top: 50px;}
-aside a img{width: 80%; }
-aside a:nth-of-type(2){margin-top: 300px; }
-aside a h1{overflow: hidden; transition: 1.5s ease-in-out; width: 15px; margin: 0px auto 10px; 
-    font-family: 'Luckiest Guy', cursive; font-family: 'Gugi', cursive; }
-aside a p{font-family: 'Gugi', cursive; opacity: 0; transition: all 1s;}
-aside a:nth-of-type(2) h1{width: 16px;}
-aside a:nth-of-type(3) h1{width: 17px;}
-aside a:last-of-type h1{width: 13px;}
-aside a h1:hover{width: 100%;}
-
 .main_slide>img {
 	opacity: 0.8;
 }
@@ -107,6 +90,7 @@ aside a h1:hover{width: 100%;}
 	/* -webkit-text-stroke: 2px #ffffff; */
 	font-weight: 500;
 	text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
 }
 
 .textbox>.text>h1:nth-of-type(2) {
@@ -122,6 +106,13 @@ aside a h1:hover{width: 100%;}
 	/* -webkit-text-stroke: 2px #ffffff; */
 	font-weight: 500;
 	text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.2);
+
+}
+
+.textbox>.trip {
+	width: 20px;
+	height: 20px;
+	position: relative;
 }
 
 .textbox>.text>h3 {
@@ -138,6 +129,7 @@ aside a h1:hover{width: 100%;}
 	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 	word-spacing: 2px;
 	line-height: 25px;
+	cursor: pointer;
 }
 
 .textbox>.text>.text_obj {
@@ -146,19 +138,28 @@ aside a h1:hover{width: 100%;}
 }
 
 
-button {
+.wrap>button {
+	z-index: 10;
+	font-family: 'TheJamsil5Bold';
 	position: absolute;
 	width: 150px;
-	height: 38px;
+	height: 40px;
 	background-color: #ffffff;
-	opacity: 0.5;
-	top: 105%;
-	left: 0%;
+	top: 38%;
+	left: 5%;
 	border-radius: 30px;
 	border: none;
-	border: 1px solid #398fff;
+	animation: fadeInUp 3s;
+	color: #464646;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 	cursor: pointer;
 }
+
+.wrap>button:hover {
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+
 
 #slidewrap {
 	animation: fadeInUp 3s;
@@ -267,7 +268,7 @@ span:hover {
 
 .modal {
 	display: none;
-	z-index: 500;
+	z-index: 999;
 	width: 80%;
 	height: 80%;
 	position: relative;
@@ -275,11 +276,15 @@ span:hover {
 	left: 0;
 	background-color: #000;
 	overflow: hidden;
+	border-radius: 20px;
+
+
 }
 
-
-.modal img{width: 100%; height: 120%;}
-.modal img:hover{}
+.modal img {
+	width: 100%;
+	height: 120%;
+}
 
 .modalBox {
 	position: absolute;
@@ -287,4 +292,33 @@ span:hover {
 	background-color: #398fff;
 	width: 100%;
 	height: 100%;
+
+}
+
+.modaltextbox {
+	width: 100%;
+	height: 15%;
+	background-color: #fff;
+	position: relative;
+	top: 85%;
+	left: 0;
+	opacity: 0;
+	transition: all 2s;
+
+}
+
+.modal:hover .modaltextbox {
+	opacity: 0.7;
+}
+
+.popup {
+	z-index: 10;
+	width: 360px;
+	height: 500px;
+	background-color: #000;
+	position: absolute;
+	top: 10%;
+	left: 5%;
+	display: flex;
+	display: none;
 }
