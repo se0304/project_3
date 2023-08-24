@@ -1,11 +1,11 @@
 @charset "utf-8";
 
-@font-face {
+/* @font-face {
 	font-family: 'TheJamsil5Bold';
 	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
 	font-weight: 300;
 	font-style: normal;
-}
+} */
 
 
 
@@ -80,7 +80,6 @@
 	font-family: 'Gugi', cursive;
 	font-size: 6.5rem;
 	white-space: nowrap;
-	font-weight: 100;
 	opacity: 1;
 	position: absolute;
 	text-align: center;
@@ -90,14 +89,13 @@
 	/* -webkit-text-stroke: 2px #ffffff; */
 	font-weight: 500;
 	text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.2);
-	cursor: pointer;
+
 }
 
 .textbox>.text>h1:nth-of-type(2) {
 	font-family: 'Gugi', cursive;
 	font-size: 4rem;
 	white-space: nowrap;
-	font-weight: 100;
 	opacity: 1;
 	position: absolute;
 	top: 22%;
@@ -116,10 +114,9 @@
 }
 
 .textbox>.text>h3 {
-	font-family: 'TheJamsil5Bold';
+	font-family: 'TheJamsil';
 	font-size: 1.2rem;
 	white-space: nowrap;
-	font-weight: 100;
 	opacity: 1;
 	position: absolute;
 	top: 31%;
@@ -129,7 +126,7 @@
 	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 	word-spacing: 2px;
 	line-height: 25px;
-	cursor: pointer;
+
 }
 
 .textbox>.text>.text_obj {
@@ -138,15 +135,15 @@
 }
 
 
-.wrap>button {
-	z-index: 10;
-	font-family: 'TheJamsil5Bold';
+.two>button {
+	z-index: 1;
+	font-family: 'TheJamsil';
 	position: absolute;
-	width: 150px;
+	width: 140px;
 	height: 40px;
 	background-color: #ffffff;
 	top: 38%;
-	left: 5%;
+	left: 5.5%;
 	border-radius: 30px;
 	border: none;
 	animation: fadeInUp 3s;
@@ -161,51 +158,122 @@
 
 
 
-#slidewrap {
-	animation: fadeInUp 3s;
+
+
+/* .hover {
+	z-index: 5;
+	width: 55%;
+	height: 55%;
+	background-color: #ffffff;
+	position: relative;
+	left: 5%;
+	top: 0%;
+	mask-image: url(../img/brush.png);
+	-webkit-mask-image: url(../img/brush.png);
+	mask-size: contain;
+	-webkit-mask-size: contain;
+	mask-repeat: no-repeat;
+	-webkit-mask-repeat: no-repeat;
+	float: left;
+}
+
+
+.hover {
+	opacity: 1;
+} */
+
+.pngimg{width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    z-index: 1;
+	opacity: 0;
+	
+	}
+
+.pngimg img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0.9;
+}
+
+.pngimg h1 {
+	position: absolute;
+	left: 22%;
+	top: 22%;
+	text-align: center;
+	font-family: 'TheJamsil';
+	opacity: 0.9;
+	color: #fff;
+	text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+	z-index: 9;
+}
+
+.pngimg h4 {
+	position: absolute;
+	left: 10%;
+	top: 38%;
+	text-align: center;
+	font-family: 'TheJamsil';
+	opacity: 0.9;
+	color: #fff;
+	text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+	font-size: 18px;
+	z-index: 9;
+}
+
+.pngimg h2 {
+	position: absolute;
+	left: 35%;
+	top: 58%;
+	text-align: center;
+	font-family: 'TheJamsil';
+	opacity: 0.9;
+	color: #ffffff;
+	text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+	z-index: 9;
+}
+
+.pngimg .coco {
+	width: 30%;
+	height: auto;
+	position: absolute;
+	top: 48%;
+	left: 8%;
+	opacity: 1;
+	filter: contrast(200%);
+	text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 #slidewrap {
-	width: 72%;
-	height: 80%;
-	margin: 50px auto;
-	position: absolute;
+	width:72%; 
+	height: 80%; 
+	position: absolute; 
 	overflow: hidden;
 	mask-image: url(../img/brush.png);
 	-webkit-mask-image: url(../img/brush.png);
-	mask-size: cover;
-	-webkit-mask-size: cover;
+	mask-size: contain;
+	-webkit-mask-size: contain;
 	mask-repeat: no-repeat;
 	-webkit-mask-repeat: no-repeat;
+	animation: fadeInUp 3s;
+	cursor: pointer;
+	z-index: 5;
+	
 }
 
 
 .slide {
-	width: 1000px;
+	width: 400%;
 	overflow: hidden;
 
 }
 
-.slide li {
-	width: 100%;
-	height: 830px;
-	float: left;
-	margin: 0px 10px;
+.slide li {width: 25%; height: 100%; float: left;}
 
-}
-
-.slide li img {
-	width: 100%;
-	height: 100%;
-	border-radius: 20px;
-	box-shadow: 1px 1px 5px white;
-	background-color: #fff;
-
-	position: absolute;
-	top: 0;
-	left: 0;
-
-
+.slide li img {width: 100%; height: 100%; 
 }
 
 .slide li img:hover {
@@ -213,42 +281,42 @@
 }
 
 span {
+	font-family: 'TheJamsil';
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	display: block;
-	font-size: 35px;
+	font-size: 150px;
 	color: #fff;
-	line-height: 35px;
+	/* line-height: 35px; */
 	cursor: pointer;
 	height: 45px;
 	transform: translateY(-50%);
-	border: 2px solid #ffffff;
+	text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2);
+	opacity: 0.8;
+	
+	
 }
 
 span:hover {
-	background: rgba(255, 255, 255, 0.8);
-	color: #000;
+	
+	opacity: 1;
 }
 
 .prev {
 	left: 0;
-	border-radius: 50%;
-	padding: 10px 10px 0px 15px;
 	color: #fff;
 
 }
 
 .next {
-	border-radius: 50%;
 	right: 0;
-	padding: 10px 10px 0px 15px;
+
 }
 
 .slidebtton_l {
 	position: absolute;
-	top: 55%;
-	left: 11%;
-	text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2);
+	top: 45%;
+	left: 10%;
 }
 
 .slidebtton_l {
@@ -257,9 +325,9 @@ span:hover {
 
 .slidebtton_r {
 	position: absolute;
-	top: 55%;
-	right: 11%;
-	text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2);
+	top: 45%;
+	right: 10%;
+	
 }
 
 .slidebtton_r {
@@ -268,12 +336,12 @@ span:hover {
 
 .modal {
 	display: none;
-	z-index: 999;
+	z-index: 8;
 	width: 80%;
 	height: 80%;
-	position: relative;
-	top: 0;
-	left: 0;
+	position: absolute;
+	top: 11%;
+	left: 10%;
 	background-color: #000;
 	overflow: hidden;
 	border-radius: 20px;
@@ -296,29 +364,174 @@ span:hover {
 }
 
 .modaltextbox {
+	position: absolute;
+	bottom: 0%;
+	left: 0;
 	width: 100%;
 	height: 15%;
-	background-color: #fff;
-	position: relative;
-	top: 85%;
-	left: 0;
-	opacity: 0;
-	transition: all 2s;
-
+	background-color: rgba(255, 255, 255, 0.7);
 }
 
-.modal:hover .modaltextbox {
-	opacity: 0.7;
-}
 
 .popup {
-	z-index: 10;
-	width: 360px;
+	z-index: 8;
+	width: 400px;
 	height: 500px;
-	background-color: #000;
 	position: absolute;
 	top: 10%;
 	left: 5%;
-	display: flex;
-	display: none;
+	overflow: hidden;
+	border-radius: 5px;
+	background-color: #fff;
 }
+
+
+.popup span {
+	font-family: 'TheJamsil';
+	font-size: 2.2rem;
+	opacity: 1;
+	color: rgb(255, 255, 255);
+	text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.336);
+	text-align: center;
+	pointer-events: none;
+	position: absolute;
+	top: 30%;
+	left: 13%;
+}
+
+.popup span:nth-of-type(2) {
+	font-family: 'TheJamsil';
+	font-size: 2rem;
+	opacity: 1;
+	color: rgb(255, 255, 255);
+	text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.336);
+	text-align: center;
+	pointer-events: none;
+	position: absolute;
+	top: 40%;
+	left: 13%;
+	text-decoration: line-through #ff0000;
+}
+
+.popup span {
+	background-color: none;
+	border: none;
+}
+
+.popup span:nth-of-type(3) {
+	font-family: 'TheJamsil';
+	font-size: 2rem;
+	opacity: 1;
+	color: rgb(194, 0, 0);
+	font-weight: 500;
+	text-shadow: 1px 2px 7px rgba(255, 255, 255, 0.336);
+	text-align: center;
+	pointer-events: none;
+	position: absolute;
+	top: 50%;
+	left: 13%;
+}
+
+.popupimg img {
+	width: auto;
+	height: 100%;
+	position: absolute;
+	opacity: 0.5;
+}
+
+.xbtn {
+	border: none;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #fff;
+
+}
+
+.xbtn:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+.select_trip {
+	position: absolute;
+	left: 12%;
+	top: 60%;
+	font-family: 'TheJamsil';
+	color: #fff;
+	text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.336);
+	font-size: 1.5rem;
+}
+
+select {
+	border: none;
+	width: 120px;
+	height: 20px;
+	font-family: 'TheJamsil';
+	position: absolute;
+	left: 90%;
+	top: 2.5%;
+	border: none;
+}
+
+select:hover {
+	background-color: #d4d4d4;
+	color: #414141;
+}
+
+.select_trip button {
+	width: 100px;
+	height: 30px;
+	border-radius: 10px;
+	border: none;
+	position: absolute;
+	top: 120%;
+	font-family: 'TheJamsil';
+	color: #ffffff;
+	background-color: rgba(255, 255, 255, 0.5);
+	cursor: pointer;
+	text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.336);
+
+
+}
+
+.select_trip button:hover {
+
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	cursor: pointer;
+	text-shadow: 1px 2px 7px rgba(255, 255, 255, 0.336);
+
+
+}
+
+.iconbox{position: absolute;
+	width:100px;
+    height:100px;
+    top: 15%;
+    right: 23%;
+	z-index: 8;
+	opacity: 0.8;
+	background-color: transparent;
+	}
+
+.iconbox>.iconbtn{
+	font-family: 'Gugi', cursive;
+	position: absolute;
+    width: 100%;
+    height: 100%;
+	top: -40%;
+	left: 15%;
+    border: none;
+	font-size: 120px;
+	background-color: transparent;
+	animation: fadeInUp 3s;
+	color: #fff;
+	text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.336);
+	cursor: pointer;
+
+  }
+
+  .iconbtn:hover{color: #d4d4d4;}
