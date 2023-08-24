@@ -58,21 +58,20 @@
 }
 
 .textbox>.text>h1 {
-	font-family: 'Luckiest Guy', cursive;
-	font-size: 6.5rem;
-	white-space: nowrap;
-	opacity: 1;
-	position: absolute;
-	text-align: center;
-	top: 10%;
-	left: 5%;
-	color: rgb(255, 255, 255);
-	/* -webkit-text-stroke: 2px #ffffff; */
-	font-weight: 500;
-	text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.2);
-	z-index: 1;
-
-}
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 8.5rem;
+    white-space: nowrap;
+    opacity: 1;
+    position: absolute;
+    text-align: center;
+    top: 5%;
+    left: 10%;
+    letter-spacing: 15px;
+    color: rgb(255, 255, 255);
+    /* -webkit-text-stroke: 2px #ffffff; */
+    font-weight: 500;
+    text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.2);
+    z-index: 1;}
 
 .textbox>.text>h1:nth-of-type(2) {
 	font-family: 'Luckiest Guy', cursive;
@@ -81,8 +80,8 @@
 	white-space: nowrap;
 	opacity: 1;
 	position: absolute;
-	top: 22%;
-	left: 5%;
+	top: 20%;
+    left: 10%;
 	color: rgb(255, 255, 255);
 	/* -webkit-text-stroke: 2px #ffffff; */
 	font-weight: 500;
@@ -103,8 +102,8 @@
 	white-space: nowrap;
 	opacity: 1;
 	position: absolute;
-	top: 31%;
-	left: 5.5%;
+	top: 29%;
+    left: 10.5%;
 	color: rgb(255, 255, 255);
 	font-weight: 500;
 	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
@@ -127,8 +126,8 @@
 	width: 140px;
 	height: 40px;
 	background-color: #ffffff;
-	top: 38%;
-	left: 5.5%;
+	top: 36%;
+    left: 10.2%;
 	border-radius: 30px;
 	border: none;
 	animation: fadeInUp 3s;
@@ -235,7 +234,7 @@
 }
 
 #slidewrap {
-	width: 72%;
+	width: 68%;
 	height: 80%;
 	position: absolute;
 	overflow: hidden;
@@ -248,6 +247,7 @@
 	animation: fadeInUp 3s;
 	cursor: pointer;
 	z-index: 0;
+	top: 20%;
 
 }
 
@@ -308,8 +308,8 @@ span:hover {
 
 .slidebtton_l {
 	position: absolute;
-	top: 45%;
-	left: 10%;
+	top: 40%;
+	left: 16%;
 }
 
 .slidebtton_l {
@@ -318,8 +318,8 @@ span:hover {
 
 .slidebtton_r {
 	position: absolute;
-	top: 45%;
-	right: 10%;
+	top: 40%;
+	right: 12%;
 
 }
 
@@ -371,12 +371,13 @@ span:hover {
 	width: 400px;
 	height: 500px;
 	position: absolute;
-	top: 10%;
-	left: 5%;
+	top: 5%;
+    left: 10%;
 	overflow: hidden;
 	border-radius: 5px;
 	background-color: #f0f0f0;
 	z-index: 6;
+	border: 2px solid rgba(255, 255, 255, 0.5);
 
 }
 
@@ -517,24 +518,23 @@ select:hover {
 	z-index: 8;
 	opacity: 0.8;
 	background-color: transparent;
+	
 }
 
 .iconbox>.iconbtn {
-	font-family: 'Gugi', cursive;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: -40%;
-	left: 15%;
-	border: none;
-	font-size: 120px;
-	background-color: transparent;
-	animation: fadeInUp 3s;
-	color: #fff;
-	text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.336);
-	cursor: pointer;
-
-}
+    font-family: 'Gugi', cursive;
+    position: absolute;
+    width: auto;
+    height: 100%;
+    top: 70%;
+    left: 25%;
+    border: none;
+    font-size: 95px;
+    background-color: transparent;
+    animation: fadeInUp 3s;
+    color: #fff;
+    text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.336);
+    cursor: pointer;}
 
 .iconbtn:hover {
 	color: #d4d4d4;
