@@ -92,3 +92,13 @@ $(function () {
         $(".main_slide img").css("opacity", "0.8");
     });
 });
+
+$(function(){
+    $(".btn").click(function(){
+        $(".fullscreen").css("background-color","black");
+    });
+
+    $(".xbtn").click(function(){
+        $(".fullscreen").css("background-color", "transparent");
+    });
+});
