@@ -406,6 +406,7 @@
 	
 	.popuptext span:nth-of-type(2) {
 		text-decoration: line-through #ff0000;
+		-webkit-text-decoration:line-through #ff0000;
 	
 	}
 	
