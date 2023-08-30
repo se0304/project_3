@@ -70,7 +70,7 @@
 		opacity: 1;
 		position: absolute;
 		text-align: center;
-		top: 10%;
+		top: 12%;
 		left: 11.5%;
 		letter-spacing: 10px;
 		color: rgb(255, 255, 255);
@@ -87,7 +87,7 @@
 		white-space: nowrap;
 		opacity: 1;
 		position: absolute;
-		top: 20%;
+		top: 21%;
 		left: 12.5%;
 		color: rgb(255, 255, 255);
 		/* -webkit-text-stroke: 2px #ffffff; */
@@ -133,7 +133,7 @@
     width: 150px;
     height: 45px;
     background-color: #ffffff;
-    top: 33%;
+    top: 34%;
     left: 31%;
     border-radius: 30px;
     border: none;
@@ -353,10 +353,10 @@
 	
 	.popup {
 	display: none;
-    width:100%;
-    height: 50%;
+    width:100vw;
+    height: 100vw;
     position: absolute;
-    top: 38%;
+    top: 90vw;
     left: 0;
     overflow: hidden;
     border-radius: 5px;
@@ -367,18 +367,18 @@
     transition: all 2s;
 	}
 	
-	.popupimg img{width: 100%; height: 100%;}
+	.popupimg img{width: 100vw; height: 100vw;}
 	.popupimg img:nth-of-type(2){opacity: 1;
 		animation: fadeInUp 3s;
-		width: 100%;
+		width: 100vw;
 		height: auto;
 		position: absolute;
-		top: 28%;
+		top: 30%;
 		right: 16%;}
 	.popupimg img:nth-of-type(3){opacity: 0.9;
 		animation: fadeInUp 3s;
 		position: absolute;
-		top: 23%;
+		top: 25%;
 		left: 2%;
 		width: 85%;
 		height: auto;}
@@ -387,10 +387,10 @@
 		position: absolute;
     top: 5%;
     right: -10%;
-    width: 98%;
-    height: 35%;
+    width: 98vw;
+    height: 35vw;
     animation: fadeInUp 3s;
-    line-height: 49px;
+    line-height: 11vw;
 	font-size: 10vw;
 		}
 
@@ -421,7 +421,7 @@
 	
 	.popupimg img {
 		width: auto;
-		height: 100%;
+		height: 100vw;
 		position: absolute;
 		opacity: 0.6;
 	}
@@ -461,8 +461,8 @@
 	
 	select {
 		border: none;
-		width: 80px;
-		height: 20px;
+		width: 13vw;
+		height: 5vw;
 		font-family: 'TheJamsil';
 		position: absolute;
 		left: 100%;
@@ -842,14 +842,15 @@
 	.modal {
 		display: none;
 		z-index: 8;
-		width: 80%;
-		height: 70%;
+		width: 80vw;
+		height: 40vw;
 		position: absolute;
-		top: 18%;
+		top: 30%;
 		left: 12%;
 		background-color: #000;
 		overflow: hidden;
 		border-radius: 20px;
+		background-repeat: no-repeat;
 	
 	
 	}
@@ -857,6 +858,7 @@
 	.modal img {
 		width: 100%;
 		height: auto;
+		
 	}
 	
 	.modalBox {
@@ -864,25 +866,25 @@
 		text-align: center;
 		background-color: #398fff;
 		width: 100%;
-		height: 100%;
+		height: auto;
 	
 	}
 	
-	.modaltextbox {
+	/* .modaltextbox {
 		position: absolute;
 		bottom: 0%;
 		left: 0;
 		width: 100%;
 		height: 15%;
 		background-color: rgba(255, 255, 255, 0.7);
-	}
+	} */
 	
 	
 	
 	.popup {
 		display: none;
-		width: 80%;
-    	height: 45%;
+		width: 80vw;
+    	height: 30vw;
     	position: absolute;
     	top: 30%;
     	left: 12%;
@@ -896,10 +898,10 @@
 		
 	}
 	
-	.popupimg img{width: 100%; height: 100%;}
+	.popupimg img{width: 100vw; height: 100vw;}
 	.popupimg img:nth-of-type(2){opacity: 1;
 		animation: fadeInUp 3s;
-		width: 600px;
+		width: 48vw;
 		height: auto;
 		position: absolute;
 		top: 15%;
@@ -910,8 +912,8 @@
 		position: absolute;
 		top: 10%;
 		right: 7%;
-		width: 40vh;
-		height: 20vh;
+		width: 28vw;
+		height: 20vw;
 		animation: fadeInUp 3s;
 		line-height: 3.6vw;
 		font-size: 3vw;
@@ -930,6 +932,7 @@
 	
 	.popup span:nth-of-type(2) {
 		text-decoration: line-through #ff0000;
+		-webkit-text-decoration:line-through #ff0000;
 	
 	}
 	
@@ -944,7 +947,7 @@
 	
 	.popupimg img {
 		width: auto;
-		height: 100%;
+		height: 30vw;
 		position: absolute;
 		opacity: 0.6;
 	}
@@ -970,7 +973,7 @@
 	
 	.select_trip {
 		position: relative;
-		right: -62%;
+		right: -58%;
     	top: 55%;
 		font-family: 'TheJamsil';
 		color: #fff;
@@ -984,8 +987,8 @@
 	
 	select {
 		border: none;
-		width: 80px;
-		height: 20px;
+		width: 5vw;
+		height: 1.5vw;
 		font-family: 'TheJamsil';
 		position: absolute;
 		left: 105%;
@@ -1386,14 +1389,14 @@
 	
 	}
 	
-	.modaltextbox {
+	/* .modaltextbox {
 		position: absolute;
 		bottom: 0%;
 		left: 0;
 		width: 100%;
 		height: 15%;
 		background-color: rgba(255, 255, 255, 0.7);
-	}
+	} */
 	
 	
 	
@@ -1439,6 +1442,7 @@
 	
 	.popup span:nth-of-type(2) {
 		text-decoration: line-through #ff0000;
+		-webkit-text-decoration:line-through #ff0000;
 	}
 
 	.popup span:nth-of-type(3) {
